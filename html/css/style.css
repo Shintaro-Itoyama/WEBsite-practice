@@ -1,0 +1,136 @@
+@charset "UTH-8";
+
+body{
+    /*font種類を決めている。優先順。 sans-serifはゴシック体のこと。*/
+    font-family: 'Hiragino KaKu Gothic Pro','Meiryo',sans-serif;
+    font-size: 15px;
+
+    /*サイトの上に青いラインを描画*/
+    border-top: 10px solid lightblue;
+}
+
+/*リンクのアンダーバーをなし、紫カラーもなし*/
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*ロゴ配置を中央に。*/
+.logo{
+
+    text-align: center;
+    /*ロゴの上にもマージン*/
+    margin-top: 40px;
+    /*ロゴとメニューの隙間*/
+    margin-bottom: 30px;
+}
+
+.logo img{
+    /*resrt.cssで、display: blockにしている対策*/
+    display: inline-block;
+    /*画像の下に隙間を入れる*/
+    margin-bottom: 5px;
+}
+
+/*menuクラスの修飾*/
+.w_inner{
+    /*ヘッダー幅1200px*/
+    width: 1200px;
+    /* 上下が0で左右がAUTO*/
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.header ul{
+    /*flex で横並びにできる。*/
+    display: flex;
+}
+
+.header ul li{
+    /* リストどうしの幅を設定*/
+    width: 200px;
+    text-align: center;
+    /*リストの右端に線を入れる。*/
+    border-right: 1px solid #ddd;
+}
+
+/*トップの左側にもボーダーを入れたいので、疑似クラスで実現*/
+.header ul li :first-child{
+    border-left: 1px solid #ddd;
+}
+
+
+/*リンクのテキスト部分だけがリンクだったのを、200pxブロック幅をリンクとして扱う*/
+.header ul li a{
+    /*親要素の幅を満たす設定。*/
+    display: block;
+}
+
+
+/*header_imgクラスを中央よせ*/
+.header_img {
+    text-align: center;
+}
+/*reset.cssでimgをdisplay:blockにしている対策。あとサイズ対策*/
+.header_img img{
+    display: inline-block;
+    max-width: 100%;
+}
+
+/*見出し　事業内容*/
+
+.container_service .service_block{
+    display: flex;
+    justify-content: space-between ;
+}
+
+.container_service .service{
+    width: 380px;
+    text-align: center;
+}
+.container_service img{
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.container_service h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.container_service .service .ttl{
+    font-weight: bold;
+    font-size: 18px;
+}
+.container_service .service .explain{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.container_service .service a{
+    background-color: #79a1b1;
+    margin-top: 15px;
+    color: white;
+    padding: 15px 20px 12px;
+}
+
+
+
+/*以下フッター*/
+.footer{
+    margin-top: 40px;
+}
+
+.pp_link{
+    text-align: right;
+}
+
+.copy{
+    text-align: center;
+    background: #79a1b1;
+    color: #fff;
+    padding: 7px 0px 3px;
+}
