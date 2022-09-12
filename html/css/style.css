@@ -90,6 +90,7 @@ h1{
 
 /*見出し　事業内容*/
 
+/*キャラクター紹介　上段*/
 .container_service .service_block{
     display: flex;
     justify-content: space-between ;
@@ -126,6 +127,61 @@ h1{
     margin-top: 15px;
     color: white;
     padding: 15px 20px 12px;
+}
+.container_service .service .explain a{
+    background-color:0;
+    margin-top: 15px;
+    color: white;
+    padding: 0px 0px 0px;
+    text-decoration:underline;
+}
+
+
+/*キャラクター紹介　下段*/
+
+.container_service2 .service_block{
+    display: flex;
+    justify-content: space-between ;
+}
+
+.container_service2 .service{
+    width: 380px;
+    text-align: center;
+}
+.container_service2 img{
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.container_service2 h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+.container_service2 .service .ttl{
+    font-weight: bold;
+    font-size: 18px;
+}
+.container_service2 .service .explain{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.container_service2 .service a{
+    background-color: #79a1b1;
+    margin-top: 15px;
+    color: white;
+    padding: 15px 20px 12px;
+}
+.container_service2 .service .explain a{
+    background-color:0;
+    margin-top: 15px;
+    color: white;
+    padding: 0px 0px 0px;
+    text-decoration:underline;
 }
 
 
